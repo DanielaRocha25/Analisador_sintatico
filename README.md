@@ -1,5 +1,7 @@
 # Analisador_sintatico
+
 Sugesões de input para executar o programa:
+
 Teste 1:
 Informe uma expressão aritmética para verificar: 2+3*2
 A expressão é válida. Resultado:  8
