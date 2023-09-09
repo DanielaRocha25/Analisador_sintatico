@@ -19,7 +19,8 @@ E → TE′
 FIRST={num}
 FOLLOW= {$, +, -}
 
-E′ → E  E′ → ε
+E′ → E
+E′ → ε
 FIRST = {+, -, ε}
 FOLLOW = {$, +, -}
 
@@ -27,7 +28,9 @@ T → FT′
 FIRST = {num}
 FOLLOW = {$, +, -}
 
-T′ → +E  T′ → −E  T′ → ε
+T′ → +E
+T′ → −E
+T′ → ε
 FIRST = {+, -, ε}
 FOLLOW = {$, +, -}
 
@@ -35,7 +38,9 @@ F → VF′
 FIRST = {num}
 FOLLOW = {$, +, -}
 
-F′→ ∗E  F′ → /E F′ → ε 
+F′→ ∗E 
+F′ → /E 
+F′ → ε 
 FIRST = {*, /, ε}
 FOLLOW = {$, +, -}
 
